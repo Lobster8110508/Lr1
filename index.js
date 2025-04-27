@@ -46,18 +46,7 @@ const addDate = () => {
     return format(addDays(date, days), 'yyyy-MM-dd___THH:mm:ss');
 };
 
-// эту корректировать
-/*
-const subDate = () => {
-  const date = new Date();
-  if (argv.days || argv.d) {
-    return format(addDays(date, -(argv.days || argv.d)), 'yyyy-MM-dd_THH:mm:ss');
-  }
-  if (argv.months || argv.m) {
-    return format(addMonths(date, -(argv.months || argv.m)), 'yyyy-MM-dd_THH:mm:ss');
-  }
-};
-*/
+
 const subDate = () => {
     const date = new Date();
     const month = argv.month || argv.m || 0;
